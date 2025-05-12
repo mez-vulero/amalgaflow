@@ -1,1 +1,3 @@
-<h1>Welcome to AmalgaFlow</h1> 
+<template>
+  <h1>Welcome to AmalgaFlow</h1>
+</template> 

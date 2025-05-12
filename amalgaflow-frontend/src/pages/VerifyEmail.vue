@@ -1,1 +1,3 @@
-<h1>Verify your AmalgaFlow email</h1> 
+<template>
+  <h1>Verify your AmalgaFlow email</h1>
+</template> 
