@@ -1,12 +1,12 @@
 {
   "name": "amalgaflow-frontend",
-  "description": "AmalgaFlow - Open Source CRM for Modern Sales Teams",
+  "description": "AmalgaFlow - Open Source Sales Platform for Modern Teams",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/assets/crm/frontend/ && yarn copy-html-entry",
-    "copy-html-entry": "cp ../crm/public/frontend/index.html ../crm/www/crm.html",
+    "build": "vite build --base=/assets/amalgaflow/frontend/ && yarn copy-html-entry",
+    "copy-html-entry": "cp ../amalgaflow/public/frontend/index.html ../amalgaflow/www/amalgaflow.html",
     "serve": "vite preview"
   },
   "dependencies": {

@@ -21,9 +21,9 @@ interface CaptureOptions {
 
 let posthog: typeof window.posthog = window.posthog
 
-// Posthog Settings
+// Posthog Settingsnpm 
 let posthogSettings = createResource({
-  url: 'crm.api.get_posthog_settings',
+  url: 'amalgaflow.api.get_posthog_settings',
   cache: 'posthog_settings',
   onSuccess: (ps: PosthogSettings) => initPosthog(ps),
 })
@@ -63,7 +63,7 @@ function capture(
   options: CaptureOptions = { data: { user: '' } },
 ) {
   if (!isTelemetryEnabled()) return
-  window.posthog.capture(`crm_${event}`, options)
+  window.posthog.capture(`amalgaflow_${event}`, options)
 }
 
 function startRecording() {

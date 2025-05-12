@@ -13,7 +13,7 @@ export default defineConfig({
       lucideIcons: true,
       jinjaBootData: true,
       buildConfig: {
-        indexHtmlPath: '../crm/www/crm.html',
+        indexHtmlPath: '../amalgaflow/www/amalgaflow.html',
         emptyOutDir: true,
         sourcemap: true,
       },
@@ -27,32 +27,32 @@ export default defineConfig({
       },
       manifest: {
         display: 'standalone',
-        name: 'Frappe CRM',
-        short_name: 'Frappe CRM',
-        start_url: '/crm',
+        name: 'AmalgaFlow',
+        short_name: 'AmalgaFlow',
+        start_url: '/amalgaflow',
         description:
-          'Modern & 100% Open-source CRM tool to supercharge your sales operations',
+          'Modern & 100% Open-source Sales platform to supercharge your sales operations',
         icons: [
           {
-            src: '/assets/crm/manifest/manifest-icon-192.maskable.png',
+            src: '/assets/amalgaflow/manifest/manifest-icon-192.maskable.png',
             sizes: '192x192',
             type: 'image/png',
             purpose: 'any',
           },
           {
-            src: '/assets/crm/manifest/manifest-icon-192.maskable.png',
+            src: '/assets/amalgaflow/manifest/manifest-icon-192.maskable.png',
             sizes: '192x192',
             type: 'image/png',
             purpose: 'maskable',
           },
           {
-            src: '/assets/crm/manifest/manifest-icon-512.maskable.png',
+            src: '/assets/amalgaflow/manifest/manifest-icon-512.maskable.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any',
           },
           {
-            src: '/assets/crm/manifest/manifest-icon-512.maskable.png',
+            src: '/assets/amalgaflow/manifest/manifest-icon-512.maskable.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable',

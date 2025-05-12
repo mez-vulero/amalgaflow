@@ -5,7 +5,7 @@ import { computed, ref } from 'vue'
 export const visible = ref(false)
 
 export const notifications = createResource({
-  url: 'crm.api.notifications.get_notifications',
+  url: 'amalgaflow.api.notifications.get_notifications',
   initialData: [],
   auto: true,
 })
@@ -14,9 +14,9 @@ export const unreadNotificationsCount = computed(
   () => notifications.data?.filter((n) => !n.read).length || 0,
 )
 
-export const notificationsStore = defineStore('crm-notifications', () => {
+export const notificationsStore = defineStore('amalgaflow-notifications', () => {
   const mark_as_read = createResource({
-    url: 'crm.api.notifications.mark_as_read',
+    url: 'amalgaflow.api.notifications.mark_as_read',
     onSuccess: () => {
       mark_as_read.params = {}
       notifications.reload()
