@@ -4,9 +4,9 @@ app_publisher = "Vulero Technologies"
 app_description = "Kick-ass Open Source CRM"
 app_email = "mezmure.dawit@vulero.et"
 app_license = "AGPLv3"
-app_icon_url = "/assets/crm/images/logo.svg"
+app_icon_url = "/assets/amalgaflow/images/logo.svg"
 app_icon_title = "CRM"
-app_icon_route = "/crm"
+app_icon_route = "/amalgaflow"
 
 # Apps
 # ------------------
@@ -14,11 +14,11 @@ app_icon_route = "/crm"
 # required_apps = []
 add_to_apps_screen = [
 	{
-		"name": "crm",
-		"logo": "/assets/crm/images/logo.svg",
+		"name": "amalgaflow",
+		"logo": "/assets/amalgaflow/images/logo.svg",
 		"title": "AmalgaFlow",
-		"route": "/crm",
-		"has_permission": "crm.api.check_app_permission",
+		"route": "/amalgaflow",
+		"has_permission": "amalgaflow.api.check_app_permission",
 	}
 ]
 
@@ -61,7 +61,7 @@ add_to_apps_screen = [
 # }
 
 website_route_rules = [
-	{"from_route": "/crm/<path:app_path>", "to_route": "crm"},
+	{"from_route": "/amalgaflow/<path:app_path>", "to_route": "amalgaflow"},
 ]
 
 # Generators
@@ -82,14 +82,14 @@ website_route_rules = [
 # Installation
 # ------------
 
-before_install = "crm.install.before_install"
-after_install = "crm.install.after_install"
+before_install = "amalgaflow.install.before_install"
+after_install = "amalgaflow.install.after_install"
 
 # Uninstallation
 # ------------
 
-before_uninstall = "crm.uninstall.before_uninstall"
-# after_uninstall = "crm.uninstall.after_uninstall"
+before_uninstall = "amalgaflow.uninstall.before_uninstall"
+# after_uninstall = "amalgaflow.uninstall.after_uninstall"
 
 # Integration Setup
 # ------------------
@@ -130,8 +130,8 @@ before_uninstall = "crm.uninstall.before_uninstall"
 # Override standard doctype classes
 
 override_doctype_class = {
-	"Contact": "crm.overrides.contact.CustomContact",
-	"Email Template": "crm.overrides.email_template.CustomEmailTemplate",
+	"Contact": "amalgaflow.overrides.contact.CustomContact",
+	"Email Template": "amalgaflow.overrides.email_template.CustomEmailTemplate",
 }
 
 # Document Events
@@ -140,27 +140,27 @@ override_doctype_class = {
 
 doc_events = {
 	"Contact": {
-		"validate": ["crm.api.contact.validate"],
+		"validate": ["amalgaflow.api.contact.validate"],
 	},
 	"ToDo": {
-		"after_insert": ["crm.api.todo.after_insert"],
-		"on_update": ["crm.api.todo.on_update"],
+		"after_insert": ["amalgaflow.api.todo.after_insert"],
+		"on_update": ["amalgaflow.api.todo.on_update"],
 	},
 	"Comment": {
-		"on_update": ["crm.api.comment.on_update"],
+		"on_update": ["amalgaflow.api.comment.on_update"],
 	},
 	"WhatsApp Message": {
-		"validate": ["crm.api.whatsapp.validate"],
-		"on_update": ["crm.api.whatsapp.on_update"],
+		"validate": ["amalgaflow.api.whatsapp.validate"],
+		"on_update": ["amalgaflow.api.whatsapp.on_update"],
 	},
 	"CRM Deal": {
 		"on_update": [
-			"crm.fcrm.doctype.erpnext_crm_settings.erpnext_crm_settings.create_customer_in_erpnext"
+			"amalgaflow.fcrm.doctype.erpnext_crm_settings.erpnext_crm_settings.create_customer_in_erpnext"
 		],
 	},
 	"User": {
-		"before_validate": ["crm.api.demo.validate_user"],
-		"validate_reset_password": ["crm.api.demo.validate_reset_password"],
+		"before_validate": ["amalgaflow.api.demo.validate_user"],
+		"validate_reset_password": ["amalgaflow.api.demo.validate_reset_password"],
 	},
 }
 
@@ -254,7 +254,7 @@ doc_events = {
 # "crm.auth.validate"
 # ]
 
-after_migrate = ["crm.fcrm.doctype.fcrm_settings.fcrm_settings.after_migrate"]
+after_migrate = ["amalgaflow.fcrm.doctype.fcrm_settings.fcrm_settings.after_migrate"]
 
 standard_dropdown_items = [
 	{
