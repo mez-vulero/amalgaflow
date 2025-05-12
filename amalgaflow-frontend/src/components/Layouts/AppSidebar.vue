@@ -34,7 +34,7 @@
           v-if="!view.hideLabel && isSidebarCollapsed && view.views?.length"
           class="mx-2 my-2 h-1 border-b"
         />
-        <Section
+        <CustomSection
           :label="view.name"
           :hideLabel="view.hideLabel"
           :opened="view.opened"
@@ -68,7 +68,7 @@
               class="mx-2 my-0.5"
             />
           </nav>
-        </Section>
+        </CustomSection>
       </div>
     </div>
     <div class="m-2 flex flex-col gap-1">
@@ -146,7 +146,7 @@ import ConvertIcon from '@/components/Icons/ConvertIcon.vue'
 import CommentIcon from '@/components/Icons/CommentIcon.vue'
 import EmailIcon from '@/components/Icons/EmailIcon.vue'
 import StepsIcon from '@/components/Icons/StepsIcon.vue'
-import Section from '@/components/Section.vue'
+import CustomSection from '@/components/CustomSection.vue'
 import Email2Icon from '@/components/Icons/Email2Icon.vue'
 import PinIcon from '@/components/Icons/PinIcon.vue'
 import UserDropdown from '@/components/UserDropdown.vue'
