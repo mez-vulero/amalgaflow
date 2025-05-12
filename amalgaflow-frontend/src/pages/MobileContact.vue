@@ -217,7 +217,7 @@ const _contact = ref({})
 const _address = ref({})
 
 const contact = createResource({
-  url: 'crm.api.contact.get_contact',
+  url: 'amalgaflow.api.contact.get_contact',
   cache: ['contact', props.contactId],
   params: {
     name: props.contactId,
@@ -490,7 +490,7 @@ function getParsedSections(_sections) {
 }
 
 async function setAsPrimary(field, value) {
-  let d = await call('crm.api.contact.set_as_primary', {
+  let d = await call('amalgaflow.api.contact.set_as_primary', {
     contact: contact.data.name,
     field,
     value,
@@ -507,7 +507,7 @@ async function setAsPrimary(field, value) {
 
 async function createNew(field, value) {
   if (!value) return
-  let d = await call('crm.api.contact.create_new', {
+  let d = await call('amalgaflow.api.contact.create_new', {
     contact: contact.data.name,
     field,
     value,

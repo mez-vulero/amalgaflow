@@ -1,1 +1,7 @@
- 
+{
+  "name": "AmalgaFlow",
+  "short_name": "AmalgaFlow",
+  "description": "Modern & 100% Open-source Sales platform to supercharge your sales teams.",
+  "start_url": "/amalgaflow",
+  "scope": "/amalgaflow"
+} 
