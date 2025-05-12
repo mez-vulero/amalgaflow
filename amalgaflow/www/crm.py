@@ -48,4 +48,4 @@ def get_boot():
 
 
 def get_default_route():
-	return "/crm"
+	return "/amalgaflow"
