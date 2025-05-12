@@ -1,14 +1,14 @@
 <div align="center" markdown="1">
 
 <a href="https://frappe.io/products/crm">
-    <img src=".github/logo.svg" height="80" alt="Frappe CRM Logo">
+    <img src=".github/logo.svg" height="80" alt="AmalgaFlow Logo">
 </a>
 
 <h1>AmalgaFlow</h1>
 
 **Simplify Sales, Amplify Relationships**
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/frappe/crm)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/mez-vuler/amalgaflow)
 
 <div>
     <picture>
@@ -16,8 +16,6 @@
         <img width="1402" alt="Frappe CRM Hero Image" src=".github/screenshots/FrappeCRMHeroImage.png">
     </picture>
 </div>
-
-[Live Demo](https://frappecrm-demo.frappe.cloud/api/method/crm.api.demo.login) - [Website](https://frappe.io/crm) - [Documentation](https://docs.frappe.io/crm)
 
 </div>
 
