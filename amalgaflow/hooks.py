@@ -1,8 +1,8 @@
 app_name = "amalgaflow"
 app_title = "AmalgaFlow"
-app_publisher = "Frappe Technologies Pvt. Ltd."
+app_publisher = "Vulero Technologies"
 app_description = "Kick-ass Open Source CRM"
-app_email = "shariq@frappe.io"
+app_email = "mezmure.dawit@vulero.et"
 app_license = "AGPLv3"
 app_icon_url = "/assets/crm/images/logo.svg"
 app_icon_title = "CRM"
@@ -16,7 +16,7 @@ add_to_apps_screen = [
 	{
 		"name": "crm",
 		"logo": "/assets/crm/images/logo.svg",
-		"title": "CRM",
+		"title": "AmalgaFlow",
 		"route": "/crm",
 		"has_permission": "crm.api.check_app_permission",
 	}

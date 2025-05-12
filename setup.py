@@ -1,4 +1,4 @@
 setup(
-    name='AmalgaFlow',
+    name='amalgaFlow',
     description='AmalgaFlow - Open Source CRM for Modern Sales Teams',
 ) 

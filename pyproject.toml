@@ -1,7 +1,7 @@
 [project]
-name = "AmalgaFlow"
+name = "amalgaflow"
 authors = [
-    { name = "Frappe Technologies Pvt. Ltd.", email = "shariq@frappe.io"}
+    { name = "Vulero Technologies", email = "mezmure.dawit@vulero.et"}
 ]
 description = "AmalgaFlow - Open Source CRM for Modern Sales Teams"
 requires-python = ">=3.10"
