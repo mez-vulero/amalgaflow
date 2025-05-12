@@ -10,7 +10,7 @@
           class="w-full section-border h-px border-t"
         />
         <div class="p-1 sm:p-3">
-          <CustomSection
+          <Section
             labelClass="px-2 font-semibold"
             headerClass="h-8"
             :label="section.label"
@@ -341,7 +341,7 @@
                 </template>
               </FadedScrollableDiv>
             </slot>
-          </CustomSection>
+          </Section>
         </div>
       </div>
     </template>
@@ -355,7 +355,7 @@
 </template>
 
 <script setup>
-import CustomSection from '@/components/CustomSection.vue'
+import Section from '@/components/Section.vue'
 import NestedPopover from '@/components/NestedPopover.vue'
 import DropdownItem from '@/components/DropdownItem.vue'
 import FadedScrollableDiv from '@/components/FadedScrollableDiv.vue'

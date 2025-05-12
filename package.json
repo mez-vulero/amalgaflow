@@ -1,5 +1,4 @@
 {
-	"type": "module",
 	"private": true,
 	"workspaces": ["amalgaflow-frontend", "frappe-ui"],
 	"scripts": {

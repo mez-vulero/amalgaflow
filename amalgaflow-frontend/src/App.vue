@@ -3,14 +3,13 @@
     <router-view />
   </Layout>
   <Dialogs />
-  <Toasts />
 </template>
 
 <script setup>
 import { Dialogs } from '@/utils/dialogs'
 import { sessionStore as session } from '@/stores/session'
 import { setTheme } from '@/stores/theme'
-import { Toasts, setConfig } from 'frappe-ui'
+import { setConfig } from 'frappe-ui'
 import { computed, defineAsyncComponent, onMounted } from 'vue'
 
 const MobileLayout = defineAsyncComponent(
