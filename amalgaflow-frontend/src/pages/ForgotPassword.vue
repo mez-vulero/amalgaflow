@@ -1,1 +1,3 @@
-<h1>Forgot your AmalgaFlow password?</h1> 
+<template>
+  <h1>Forgot your AmalgaFlow password?</h1>
+</template> 
